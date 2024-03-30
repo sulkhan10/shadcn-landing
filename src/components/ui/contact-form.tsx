@@ -19,11 +19,11 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 
 const formSchema = z.object({
-  subject: z.string().min(1, {
-    message: "Subject is required",
-  }),
+  // subject: z.string().min(1, {
+  //   message: "Subject is required",
+  // }),
   msg: z.string().min(1, {
-    message: "Message is required",
+    message: "Silakan isi pesan anda",
   }),
 })
 
@@ -37,8 +37,17 @@ export default function ContactForm() {
   })
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    window.location.href = `mailto:sulkhangalangsakti@getMaxListeners.com?subject=${values.subject}&body=${values.msg}`
-    // window.location.href = `mailto:${contactConfig.email}?subject=${values.subject}&body=${values.msg}`
+    // window.location.href = `mailto:sulkhangalangsakti@getMaxListeners.com?subject=${values.subject}&body=${values.msg}`
+    // window.location.href = `https://wa.me/${6285858999264}?text=${values.msg}`
+
+     // Define the URL
+     const url = `https://wa.me/${6285858999264}?text=${values.msg}`;
+    
+     // Open the URL in a new tab
+     window.open(url, '_blank');
+     
+     // Reset the form
+     form.reset();
     form.reset()
   }
 
@@ -46,9 +55,9 @@ export default function ContactForm() {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="w-full space-y-4 py-8 sm:w-[24rem]"
+        className="w-full space-y-4 py-8 sm:w-[24rem] text-white"
       >
-        <FormField
+        {/* <FormField
           control={form.control}
           name="subject"
           render={({ field }) => (
@@ -60,18 +69,18 @@ export default function ContactForm() {
               <FormMessage />
             </FormItem>
           )}
-        />
+        /> */}
         <FormField
           control={form.control}
           name="msg"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Message</FormLabel>
+              <FormLabel>Pesan</FormLabel>
               <FormControl>
-                <Textarea placeholder="Enter your message" {...field} />
+                <Textarea placeholder="Silakan isi pertanyaan atau saran kepada kami" {...field} />
               </FormControl>
               <FormDescription>
-                Your message will be sent through email
+                Pesan anda akan langsung terkirim ke WhatsApp kami
               </FormDescription>
               <FormMessage />
             </FormItem>
@@ -79,7 +88,7 @@ export default function ContactForm() {
         />
         <div />
         <Button className="w-full" type="submit">
-          Submit
+          Kirim
         </Button>
       </form>
     </Form>
