@@ -4,8 +4,7 @@ import "./globals.css";
 import Footer from "@/components/layout/Footer";
 import NavbarDemo from "@/components/layout/NavbarDemo";
 
-const inter = Inter({ subsets: ["latin"],  variable: "--font-sans",
-});
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
   title: "Arrowgan Arwana",
@@ -20,10 +19,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} bg-[#202124] min-h-[100vh]`}>
-
-      <NavbarDemo />
-            {children}
-            <Footer />
+        <NavbarDemo />
+        {children}
+        <Footer />
       </body>
     </html>
   );

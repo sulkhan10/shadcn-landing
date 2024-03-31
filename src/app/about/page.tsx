@@ -15,9 +15,7 @@ export default function TracingBeamDemo() {
               {item.badge}
             </h2>
 
-            <p className="text-xl text-[#EAE9EA] mb-4">
-              {item.title}
-            </p>
+            <p className="text-xl text-[#EAE9EA] mb-4">{item.title}</p>
 
             <div className="text-sm  prose prose-sm dark:prose-invert text-[#EAE9EA]">
               {item?.image && (
@@ -26,7 +24,7 @@ export default function TracingBeamDemo() {
                   alt="blog thumbnail"
                   height="1000"
                   width="1000"
-                  className="rounded-lg mb-10 object-cover "
+                  className="rounded-lg mb-10 object-cover h-64 w-auto"
                 />
               )}
               {item.description}
@@ -40,78 +38,101 @@ export default function TracingBeamDemo() {
 
 const dummyContent = [
   {
-    title: "Lorem Ipsum Dolor Sit Amet",
+    title: "Berbagai Macam Ukuran",
     description: (
       <>
         <p>
-          Sit duis est minim proident non nisi velit non consectetur. Esse
-          adipisicing laboris consectetur enim ipsum reprehenderit eu deserunt
-          Lorem ut aliqua anim do. Duis cupidatat qui irure cupidatat incididunt
-          incididunt enim magna id est qui sunt fugiat. Laboris do duis pariatur
-          fugiat Lorem aute sit ullamco. Qui deserunt non reprehenderit dolore
-          nisi velit exercitation Lorem qui do enim culpa. Aliqua eiusmod in
-          occaecat reprehenderit laborum nostrud fugiat voluptate do Lorem culpa
-          officia sint labore. Tempor consectetur excepteur ut fugiat veniam
-          commodo et labore dolore commodo pariatur.
+        Kami menawarkan berbagai macam ukuran Arwana , mulai dari yang kecil hingga yang besar.
         </p>
         <p>
-          Dolor minim irure ut Lorem proident. Ipsum do pariatur est ad ad
-          veniam in commodo id reprehenderit adipisicing. Proident duis
-          exercitation ad quis ex cupidatat cupidatat occaecat adipisicing.
-        </p>
-        <p>
-          Tempor quis dolor veniam quis dolor. Sit reprehenderit eiusmod
-          reprehenderit deserunt amet laborum consequat adipisicing officia qui
-          irure id sint adipisicing. Adipisicing fugiat aliqua nulla nostrud.
-          Amet culpa officia aliquip deserunt veniam deserunt officia
-          adipisicing aliquip proident officia sunt.
+        Apakah Anda mencari ikan kecil yang lucu untuk memulai kolam Anda atau mencari Arwana  yang besar dan mengesankan, kami memiliki semuanya di sini.
         </p>
       </>
     ),
-    badge: "React",
-    image:
-      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=3540&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    badge: "Arwana Silver",
+    image: "/arrowganImage8.jpeg",
   },
   {
-    title: "Lorem Ipsum Dolor Sit Amet",
+    title: "Kunjungi toko kami",
     description: (
       <>
         <p>
-          Ex irure dolore veniam ex velit non aute nisi labore ipsum occaecat
-          deserunt cupidatat aute. Enim cillum dolor et nulla sunt exercitation
-          non voluptate qui aliquip esse tempor. Ullamco ut sunt consectetur
-          sint qui qui do do qui do. Labore laborum culpa magna reprehenderit ea
-          velit id esse adipisicing deserunt amet dolore. Ipsum occaecat veniam
-          commodo proident aliqua id ad deserunt dolor aliquip duis veniam sunt.
-        </p>
-        <p>
-          In dolore veniam excepteur eu est et sunt velit. Ipsum sint esse
-          veniam fugiat esse qui sint ad sunt reprehenderit do qui proident
-          reprehenderit. Laborum exercitation aliqua reprehenderit ea sint
-          cillum ut mollit.
+        Jadi, jika Anda mencari Arwana  berkualitas dengan berbagai macam ukuran untuk melengkapi kolam Anda, tidak perlu mencari lebih jauh. Kunjungi toko kami sekarang dan temukan Arwana  impian Anda di sini!
         </p>
       </>
     ),
-    badge: "Changelog",
-    image:
-      "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&q=80&w=3540&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    badge: "Berkualitas",
+    image: "/arrowganImage7.jpeg",
   },
   {
-    title: "Lorem Ipsum Dolor Sit Amet",
+    title: "Jaminan Kepuasan Pelanggan",
     description: (
       <>
         <p>
-          Ex irure dolore veniam ex velit non aute nisi labore ipsum occaecat
-          deserunt cupidatat aute. Enim cillum dolor et nulla sunt exercitation
-          non voluptate qui aliquip esse tempor. Ullamco ut sunt consectetur
-          sint qui qui do do qui do. Labore laborum culpa magna reprehenderit ea
-          velit id esse adipisicing deserunt amet dolore. Ipsum occaecat veniam
-          commodo proident aliqua id ad deserunt dolor aliquip duis veniam sunt.
+        Kami mengutamakan kepuasan pelanggan di setiap langkahnya. Jika Anda tidak sepenuhnya puas dengan produk yang Anda terima, kami akan dengan senang hati mengembalikan uang Anda. Ini adalah komitmen kami untuk memastikan bahwa setiap pembelian di Arwana  merupakan pengalaman yang positif dan tanpa risiko bagi Anda.
         </p>
       </>
     ),
-    badge: "Launch Week",
-    image:
-      "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&q=80&w=3506&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    badge: "Arwana Super Red",
+    image: "/arrowganImage6.jpeg",
+  },
+  {
+    title: "Pembelian Aman dan Terjamin",
+    description: (
+      <>
+        <p>
+        Dengan membeli melalui Tokopedia, TikTokShop, dan Shopee, Anda dapat yakin bahwa pembelian Anda aman dan terjamin. Platform-platform ini menyediakan sistem pembayaran yang aman dan proteksi pembeli, sehingga Anda dapat berbelanja dengan percaya diri.
+        </p>
+      </>
+    ),
+    badge: "Aman",
+    image: "/arrowganImage5.jpeg",
+  },
+  {
+    title: "Mendapatkan Garansi",
+    description: (
+      <>
+        <p>
+        tidak perlu ragu lagi untuk mempercayakan pembelian Anda kepada kami di Arwana . Dengan garansi uang kembali ini, Anda dapat berbelanja dengan keyakinan penuh bahwa kepuasan Anda adalah prioritas utama kami.        </p>
+      </>
+    ),
+    badge: "Garansi",
+    image: "/arrowganImage4.jpeg",
+  },
+  {
+    title: "Tanpa Minimal Order",
+    description: (
+      <>
+        <p>
+        Melayani semua jenis pelanggan, mulai dari partai besar hingga partai kecil. Apapun kebutuhan Anda, kami siap membantu Anda menemukan Arwana  yang sempurna untuk melengkapi kolam Anda.
+        </p>
+      </>
+    ),
+    badge: "Tanpa Minimal Order",
+    image: "/arrowganImage3.jpeg",
+  },
+  {
+    title: "Kemudahan Berbelanja Online",
+    description: (
+      <>
+        <p>
+        Untuk kenyamanan Anda, kami melayani pembelian melalui berbagai platform online terkemuka seperti Tokopedia, TikTokShop, dan Shopee. Anda dapat dengan mudah menelusuri koleksi kami, memilih ukuran yang sesuai, dan melakukan pembelian dengan cepat dan aman dari kenyamanan rumah Anda.
+        </p>
+      </>
+    ),
+    badge: "Pembelian via Online",
+    image: "/arrowganImage2.jpeg",
+  },
+  {
+    title: "Pengiriman Fleksibel",
+    description: (
+      <>
+        <p>
+        Kami juga menawarkan berbagai opsi pengiriman, baik melalui ekspedisi maupun pengambilan langsung di toko kami. Apakah Anda membutuhkan pengiriman ke seluruh Indonesia atau ingin mengambil pesanan Anda secara langsung, kami siap membantu Anda menyesuaikan pengiriman sesuai dengan preferensi Anda.
+        </p>
+      </>
+    ),
+    badge: "Pengiriman",
+    image: "/arrowganImage1.jpeg",
   },
 ];
