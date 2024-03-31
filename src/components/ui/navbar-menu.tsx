@@ -124,10 +124,18 @@ export const HoveredLink = ({ children,setActive, ...rest }: any) => {
   return (
     <Link
       {...rest}
-      className="text-[#EAE9EA] hover:text-[#eae9ea] "
+      className="text-[#EAE9EA]  "
       onClick={() => {
         setActive(null)
+        console.log("clicked ABC", children, rest);
+        console.log("clicked ABC");
+        
       }}
+      // onMouseEnter={() => {
+      //    setActive(null)
+      //   console.log("hovered ABC", rest);
+      // }
+      // }
     >
       {children}
     </Link>

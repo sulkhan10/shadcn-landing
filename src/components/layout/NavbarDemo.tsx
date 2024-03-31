@@ -39,8 +39,8 @@ function Navbar({ className }: { className?: string }) {
         </Link>
         <MenuItem setActive={setActive} active={active} item="Arrowgan Arwana">
           <div className="flex flex-col space-y-4 text-sm ">
-            <HoveredLink href="/about">Tentang Kami</HoveredLink>
-            <HoveredLink href="/service">Service</HoveredLink>
+            <HoveredLink setActive={setActive} href="/about">Tentang Kami</HoveredLink>
+            <HoveredLink setActive={setActive} href="/service">Service</HoveredLink>
            
           </div>
         </MenuItem>
