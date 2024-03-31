@@ -18,7 +18,7 @@ export default function HeroParallaxDemo() {
   </>
   );
 }
-export const products = [
+ const products = [
   {
     title: "Moonbeam",
     link: "https://gomoonbeam.com",
@@ -105,7 +105,7 @@ export const products = [
 
  function InfiniteMovingCardsDemo() {
   return (
-    <div className="  flex flex-col antialiased bg-black dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+    <div className=" py-8 md:py-14 flex flex-col antialiased bg-[#202124] dark:bg-[#202124] dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
       <InfiniteMovingCards
         items={testimonials}
         direction="right"
@@ -118,31 +118,37 @@ export const products = [
 const testimonials = [
   {
     quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-    name: "Charles Dickens",
-    title: "A Tale of Two Cities",
+      "Saya terpesona dengan kualitas Arowana yang saya dapatkan dari Arrowgan Arowana. Ikan-ikan mereka benar-benar menakjubkan, dan mereka telah mengubah akuarium saya menjadi sebuah karya masterpiece!",
+    name: "Koko Bernard",
+    // title: "A Tale of Two Cities",
   },
   {
     quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    name: "William Shakespeare",
-    title: "Hamlet",
+      "Terima kasih, Arrowgan Arowana, atas menyediakan saya dengan Arowana yang begitu indah. Ini bukan hanya seekor ikan; ini adalah simbol prestise di rumah saya.",
+    name: "Sakti S.",
+    // title: "Hamlet",
   },
   {
-    quote: "All that we see or seem is but a dream within a dream.",
-    name: "Edgar Allan Poe",
-    title: "A Dream Within a Dream",
-  },
-  {
-    quote:
-      "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-    name: "Jane Austen",
-    title: "Pride and Prejudice",
+    quote: "Arrowgan Arowana melebihi ekspektasi saya. Layanan pelanggan mereka luar biasa, dan mereka membantu saya menemukan Arowana yang sempurna untuk setup saya.",
+    name: "Wirawan",
+    // title: "A Dream Within a Dream",
   },
   {
     quote:
-      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-    name: "Herman Melville",
-    title: "Moby-Dick",
+      "Saya telah mencari penjual Arowana yang terpercaya selama berbulan-bulan, dan saya sangat senang menemukan Arrowgan Arowana. Ikan-ikan mereka luar biasa, dan harga-harganya masuk akal.",
+    name: "Bapak Zul",
+    // title: "Pride and Prejudice",
+  },
+  {
+    quote:
+      "Saya sangat merekomendasikan Arrowgan Arowana kepada siapa pun yang mencari Arowana. Kualitas ikan mereka tidak tertandingi, dan layanan pelanggan mereka luar biasa.",
+    name: "Mas Fajar",
+    // title: "Moby-Dick",
+  },
+  {
+    quote:
+      "Saya sangat berterima kasih kepada Arrowgan Arowana karena telah membantu saya menemukan Arowana yang sempurna untuk rumah saya. Keahlian dan profesionalisme mereka sungguh patut diacungi jempol.",
+    name: "Pak Michael",
+    // title: "Moby-Dick",
   },
 ];

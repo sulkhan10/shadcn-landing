@@ -34,11 +34,11 @@ function Navbar({ className }: { className?: string }) {
             src="/logo.jpeg"
             width={50}
             height={50}
-            className="w-12 h-auto"
+            className="w-8 md:w-12 h-auto rounded-lg"
           />
         </Link>
-        <MenuItem setActive={setActive} active={active} item="Services">
-          <div className="flex flex-col space-y-4 text-sm">
+        <MenuItem setActive={setActive} active={active} item="Arrowgan Arwana">
+          <div className="flex flex-col space-y-4 text-sm ">
             <HoveredLink href="/about">About</HoveredLink>
             <HoveredLink href="/service">Service</HoveredLink>
             <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
@@ -73,7 +73,7 @@ function Navbar({ className }: { className?: string }) {
               /> */}
           </div>
         </MenuItem>
-        <Link className="text-xs md:text-lg" href="/contact">Kontak</Link>
+        <Link className="text-xs md:text-lg text-[#eae9ea] font-semibold" href="/contact">Kontak</Link>
       </Menu>
     </div>
   );

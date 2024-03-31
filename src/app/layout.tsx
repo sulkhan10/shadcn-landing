@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} min-h-[100vh]`}>
+      <body className={`${inter.className} bg-[#202124] min-h-[100vh]`}>
 
       <NavbarDemo />
             {children}

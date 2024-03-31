@@ -60,7 +60,7 @@ export const HeroParallax = ({
   return (
     <div
       ref={ref}
-      className="h-[160vh] md:h-[200vh] pt-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d] bg-black"
+      className="h-[160vh] md:h-[200vh] pt-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d] bg-[#202124]"
     >
       <Header />
       <motion.div
@@ -106,14 +106,12 @@ export const HeroParallax = ({
 
 export const Header = () => {
   return (
-    <div className="max-w-7xl relative mx-auto py-40 md:py-40 px-4 w-full text-white  left-0 top-0">
-      <h1 className="text-2xl md:text-7xl font-bold dark:text-white">
-        The Ultimate <br /> development studio
+    <div className="max-w-7xl relative mx-auto py-40 md:py-40 px-4 w-full text-[#eae9ea]  left-0 top-0">
+      <h1 className="text-2xl md:text-7xl font-bold dark:text-[#eae9ea]">
+Selamat Datang di <br /> Arrowgan Arowana !
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-        We build beautiful products with the latest technologies and frameworks.
-        We are a team of passionate developers and designers that love to build
-        amazing products.
+      Temukan kecantikan yang eksotis di Arrowgan Arowana, tempat terbaik untuk mendapatkan ikan Arowana berkualitas.
       </p>
     </div>
   );
@@ -153,8 +151,8 @@ export const ProductCard = ({
           alt={product.title}
         />
       {/* </Link> */}
-      <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>
-      {/* <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white">
+      <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-[#202124] pointer-events-none"></div>
+      {/* <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-[#eae9ea]">
         {product.title}
       </h2> */}
     </motion.div>

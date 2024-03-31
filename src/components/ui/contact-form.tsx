@@ -31,7 +31,7 @@ export default function ContactForm() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      subject: "",
+      // subject: "",
       msg: "",
     },
   })
@@ -55,7 +55,7 @@ export default function ContactForm() {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="w-full space-y-4 py-8 sm:w-[24rem] text-white"
+        className="w-full space-y-4 py-8 sm:w-[24rem] text-[#eae9ea]"
       >
         {/* <FormField
           control={form.control}
